@@ -1,3 +1,17 @@
+/**
+ * Fossils API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/fossils/individuals
+ * - GET /nh/fossils/individuals/{fossil}
+ * - GET /nh/fossils/groups
+ * - GET /nh/fossils/groups/{fossil_group}
+ * - GET /nh/fossils/all
+ * - GET /nh/fossils/all/{fossil}
+ *
+ * Filtros principales:
+ * thumbsize.
+ */
 import {
     createNookipediaClient,
     type NookipediaClientConfig,

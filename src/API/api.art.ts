@@ -1,3 +1,13 @@
+/**
+ * Artwork API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/art
+ * - GET /nh/art/{artwork}
+ *
+ * Filtros principales:
+ * hasfake, excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type ArtworkParams,

@@ -1,3 +1,13 @@
+/**
+ * Misc Items API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/items
+ * - GET /nh/items/{item}
+ *
+ * Filtros principales:
+ * excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type NookipediaClientConfig,

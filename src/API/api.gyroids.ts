@@ -1,3 +1,13 @@
+/**
+ * Gyroids API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/gyroids
+ * - GET /nh/gyroids/{gyroid}
+ *
+ * Filtros principales:
+ * sound, excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type GyroidsParams,

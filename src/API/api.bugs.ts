@@ -1,3 +1,13 @@
+/**
+ * Bugs API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/bugs
+ * - GET /nh/bugs/{bug}
+ *
+ * Filtros principales:
+ * month, excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type MonthFilterParams,

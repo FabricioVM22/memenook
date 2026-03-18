@@ -1,3 +1,13 @@
+/**
+ * Sea Creatures API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/sea
+ * - GET /nh/sea/{sea_creature}
+ *
+ * Filtros principales:
+ * month, excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type MonthFilterParams,

@@ -1,3 +1,12 @@
+/**
+ * Events API (New Horizons)
+ *
+ * Endpoint del YAML:
+ * - GET /nh/events
+ *
+ * Filtros principales:
+ * date, year, month, day.
+ */
 import {
     createNookipediaClient,
     type EventsParams,

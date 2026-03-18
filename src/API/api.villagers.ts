@@ -1,3 +1,13 @@
+/**
+ * Villagers API
+ *
+ * Endpoints del YAML:
+ * - GET /villagers
+ *
+ * Filtros soportados:
+ * name, species, personality, game[], birthmonth, birthday, nhdetails,
+ * excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type NookipediaClientConfig,

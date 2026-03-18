@@ -1,3 +1,13 @@
+/**
+ * Clothing API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/clothing
+ * - GET /nh/clothing/{clothing}
+ *
+ * Filtros principales:
+ * category, color[], style[], labeltheme, excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type ClothingParams,

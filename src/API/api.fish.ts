@@ -1,3 +1,13 @@
+/**
+ * Fish API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/fish
+ * - GET /nh/fish/{fish}
+ *
+ * Filtros principales:
+ * month, excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type MonthFilterParams,

@@ -1,3 +1,13 @@
+/**
+ * Tools API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/tools
+ * - GET /nh/tools/{tool}
+ *
+ * Filtros principales:
+ * excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type NookipediaClientConfig,

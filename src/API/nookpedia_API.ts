@@ -1,6 +1,18 @@
+/**
+ * Nookipedia API Core Client
+ *
+ * Basado en OpenAPI 3.0 (v1.7.0).
+ *
+ * Headers requeridos por el API:
+ * - X-API-KEY: UUID entregado por Nookipedia.
+ * - Accept-Version: version del API (ej. 1.7.0).
+ *
+ * Uso rapido:
+ * const client = createNookipediaClient({ apiKey: 'TU_UUID' });
+ * const villagers = await client.getVillagers({ species: 'frog', nhdetails: true });
+ */
 const DEFAULT_BASE_URL = 'https://api.nookipedia.com';
 const DEFAULT_API_VERSION = '1.7.0';
-const apikey= 'e474b790-c856-4733-a1cb-d8d48a4a4b13';
 
 type QueryPrimitive = string | number | boolean;
 type QueryValue = QueryPrimitive | QueryPrimitive[] | undefined;

@@ -1,3 +1,13 @@
+/**
+ * Furniture API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/furniture
+ * - GET /nh/furniture/{furniture}
+ *
+ * Filtros principales:
+ * category, color[], excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type FurnitureParams,

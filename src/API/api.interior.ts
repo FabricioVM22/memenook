@@ -1,3 +1,13 @@
+/**
+ * Interior API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/interior
+ * - GET /nh/interior/{item}
+ *
+ * Filtros principales:
+ * category, color[], excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type InteriorParams,

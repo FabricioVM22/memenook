@@ -1,3 +1,13 @@
+/**
+ * Photos and Posters API (New Horizons)
+ *
+ * Endpoints del YAML:
+ * - GET /nh/photos
+ * - GET /nh/photos/{item}
+ *
+ * Filtros principales:
+ * excludedetails, thumbsize.
+ */
 import {
     createNookipediaClient,
     type NookipediaClientConfig,

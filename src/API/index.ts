@@ -1,3 +1,9 @@
+/**
+ * Barrel de APIs de Nookipedia.
+ *
+ * Ejemplo:
+ * import { createNookipediaVillagersApi } from './API';
+ */
 export * from './nookpedia_API';
 export * from './api.villagers';
 export * from './api.fish';
