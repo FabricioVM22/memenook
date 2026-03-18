@@ -18,6 +18,26 @@ interface Villager {
   styleUrl: './villagers.css',
 })
 export class Villagers implements OnInit {
+  sortColumn: keyof Villager = 'name';
+  sortDirection: 'asc' | 'desc' = 'asc';
+
+  sortVillagers(column: keyof Villager) {
+    if (this.sortColumn === column) {
+      this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+      this.sortColumn = column;
+      this.sortDirection = 'asc';
+    }
+
+    const directionFactor = this.sortDirection === 'asc' ? 1 : -1;
+
+    this.villagers = [...this.villagers].sort((a, b) => {
+      const left = a[column] ?? '';
+      const right = b[column] ?? '';
+      return left.localeCompare(right, 'es', { sensitivity: 'base' }) * directionFactor;
+    });
+  }
+
   private readonly nookipedia = inject(NookipediaService);
 
   villagers: Villager[] = [];
@@ -27,6 +47,7 @@ export class Villagers implements OnInit {
 
   async ngOnInit() {
     await this.loadVillagers();
+    
   }
 
   get filteredVillagers(): Villager[] {
@@ -39,6 +60,8 @@ export class Villagers implements OnInit {
       villager.name.toLowerCase().includes(term),
     );
   }
+
+
 
   private async loadVillagers() {
     this.isLoading = true;

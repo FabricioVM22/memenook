@@ -1,1 +1,41 @@
-<p>items works!</p>
+<main>
+    <div class="main__content">
+        <div class="main__content-inner">
+        <h1 class="main__title">Items</h1>
+        <p class="main__description">
+            Aquí encontrarás información sobre los diversos objetos que puedes encontrar en Animal Crossing: New Horizons, desde muebles hasta herramientas y más.
+        </p>
+        <div>
+            <h2>Busca un item:</h2>
+            <input type="text" [(ngModel)]="searchTerm" placeholder="Buscar por nombre...">
+        </div>
+
+        <p *ngIf="isLoading">Cargando items...</p>
+        <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Precio destacado</th>
+                        <th>Precio de caja</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of filteredItems">
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.category }}</td>
+                        <td>{{ item.price }}</td>
+                        <td>{{ item.featuredPrice }}</td>
+                        <td>{{ item.boxPrice }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    </div>
+</main>

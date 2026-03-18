@@ -1,12 +1,8 @@
 <main class="main">
   <div class="content">
     <div class="content__inner">
-      <h1 class="content__title">Bienvenida a MemeNook! Tendo: MemeNook</h1>
-      <p class="content__description">
-         Aquí puedes ver todos los residentes con informacion importante
-      </p>
       <div class="content__villagers">
-        <h2 class="content__subtitle">Residentes</h2>
+        <h1 class="content__subtitle">Residentes</h1>
         <div>
         <div>
             <h2>Busca uno:</h2>
@@ -15,13 +11,12 @@
 
         <p *ngIf="isLoading">Cargando residentes...</p>
         <p *ngIf="errorMessage">{{ errorMessage }}</p>
-
-        <table>
+         <table>
             <tr>
-                <th>Nombre</th>
-                <th>Especie</th>
-                <th>Personalidad</th>
-                <th>Genero</th>
+                <th (click)="sortVillagers('name')">Nombre</th>
+                <th (click)="sortVillagers('species')">Especie</th>
+                <th (click)="sortVillagers('personality')">Personalidad</th>
+                <th (click)="sortVillagers('gender')">Genero</th>
             </tr>
             <tr *ngFor="let villager of filteredVillagers">
                 <td>{{ villager.name }}</td>
